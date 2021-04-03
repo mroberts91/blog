@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  .NET Console App with Platform Extensions
-categories: [dotnet,net5.0,console,dependecy inejction]
+categories: [dotnet,net5.0,console,dependency injection]
 ---
 
 ## .NET Platform Extensions FTW
