@@ -5,9 +5,10 @@ categories: [dotnet,options]
 ---
 
 # Strongly Typed Configuration Values
-[Options Pattern Example Source Code](https://github.com/mroberts91/OptionsPatternExample)
 
 Using the options pattern allows you to define classes that provide strongly typed configuration groups available in dependecy injection. There are 3 main types that are used when requesting options from DI, `IOptions<T>`,` IOptionsMonitor<T>`, `IOptionsSnapshot<T>`. In order to properly bind to the defined classes, they must be non-abstract public classes with a public parameterless constructor as well as having public read-write properties.
+
+[Options Pattern Example Source Code](https://github.com/mroberts91/OptionsPatternExample)
 
 ## Configuration Binding
 Define as class that meets the requirements for binding:
