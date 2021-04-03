@@ -57,7 +57,7 @@ public class ConfigurationController : ControllerBase
 One thing to note when using `IOptions<T>` is that if you update `appsettings.json` while the application is still running, the changes to configuration will not be picked up until the application is restarted. But luckily the .NET team, as usual, has a solution to your problem.
   
 ## IOptionsSnapshot\<T>
-Going the options snapshot route may be a good option for you if there are values in the application that are updated on a regular basis or critical to in an emergency, which a loss in service to users. `IOptionsSnapshot<T>` is a scoped service and provides a snapshot of the options at the time the options object is constructed. Options snapshots are designed for use with transient and scoped dependencies.
+Going the options snapshot route may be a good option for you if there are values in your application that are updated on a regular basis or critical to you in an emergency, in which a loss in connectivity to users is less than ideal. `IOptionsSnapshot<T>` is a scoped service and provides a snapshot of the options at the time the options object is constructed. Options snapshots are designed for use with transient and scoped dependencies.
 ```csharp
 [ApiController]
 [Route("[controller]")]
