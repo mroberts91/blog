@@ -70,7 +70,11 @@ helm upgrade --install sample .\chart\
 **Note:** This template had a slight bug in the Helm Chart `deployment.yaml` template at the time of writing this. So if you receive the following error, is easily resolved. The issue is just 2 extra tabs near the end of the document.
 
 ```powershell
-Error: unable to build kubernetes objects from release manifest: error validating "": error validating data: [ValidationError(Deployment.spec.template.spec.containers[0].env[1]): unknown field "livenessProbe" in io.k8s.api.core.v1.EnvVar, ValidationError(Deployment.spec.template.spec.containers[0].env[1]): unknown field "readinessProbe" in io.k8s.api.core.v1.EnvVar]
+Error: unable to build kubernetes objects from release manifest: error validating "": error validating data: 
+  ValidationError(Deployment.spec.template.spec.containers[0].env[1]):
+    unknown field "livenessProbe" in io.k8s.api.core.v1.EnvVar,
+  ValidationError(Deployment.spec.template.spec.containers[0].env[1]):
+    unknown field "readinessProbe" in io.k8s.api.core.v1.EnvVar]
 ```
 
 The `readinessProbe` and `livenessProbe` blocks must be aligned with the `env` block. Initial project generation had these block contained in the scope of the env block which causes the above error.
