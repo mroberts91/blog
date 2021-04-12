@@ -80,8 +80,8 @@ Intel Core i5-8350U CPU 1.70GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical c
 
 
 ```
-|                   Method |     Mean |    Error |   StdDev | Gen 0 | Gen 1 | Gen 2 | Allocated |
-|------------------------- |---------:|---------:|---------:|------:|------:|------:|----------:|
-| GetProductsReferenceTask | 18.47 μs | 1.922 μs | 5.544 μs |     - |     - |     - |    1480 B |
-|     GetProductsValueTask | 23.15 μs | 2.881 μs | 8.359 μs |     - |     - |     - |     760 B |
+| Method                   | Mean     | Error    | StdDev   | Allocated  |
+|--------------------------|----------|----------|----------|------------|
+| GetProductsReferenceTask | 18.47 μs | 1.922 μs | 5.544 μs | 1480 B     |
+|     GetProductsValueTask | 23.15 μs | 2.881 μs | 8.359 μs |  760 B     |
 
