@@ -71,17 +71,18 @@ When running a benchmark against two similar methods where one returns `Task<T>`
 [Benchmark Source Code](https://github.com/mroberts91/ValueTasks)
 
 ``` ini
-
 BenchmarkDotNet=v0.12.1, OS=Windows 10.0.19041.630 (2004/?/20H1)
 Intel Core i5-8350U CPU 1.70GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
 .NET Core SDK=5.0.201
   [Host]     : .NET Core 5.0.4 (CoreCLR 5.0.421.11614, CoreFX 5.0.421.11614), X64 RyuJIT
   DefaultJob : .NET Core 5.0.4 (CoreCLR 5.0.421.11614, CoreFX 5.0.421.11614), X64 RyuJIT
-
-
 ```
-| Method                   | Mean     | Error    | StdDev   | Allocated  |
-|--------------------------|----------|----------|----------|------------|
-| GetProductsReferenceTask | 18.47 μs | 1.922 μs | 5.544 μs | 1480 B     |
-|     GetProductsValueTask | 23.15 μs | 2.881 μs | 8.359 μs |  760 B     |
 
+<table>
+<thead><tr><th>            Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>GetProductsReferenceTask</td><td>18.47 &mu;s</td><td>1.922 &mu;s</td><td>5.544 &mu;s</td><td>-</td><td>-</td><td>-</td><td>1480 B</td>
+</tr><tr><td>GetProductsValueTask</td><td>23.15 &mu;s</td><td>2.881 &mu;s</td><td>8.359 &mu;s</td><td>-</td><td>-</td><td>-</td><td>760 B</td>
+</tr></tbody></table>
+</body>
+</html>
