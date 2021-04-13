@@ -80,10 +80,8 @@ Intel Core i5-8350U CPU 1.70GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical
 
 <br />
 <table>
-<thead><tr><th>            Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+<thead><tr><th>            Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>GetProductsReferenceTask</td><td>18.47 &mu;s</td><td>1.922 &mu;s</td><td>5.544 &mu;s</td><td>-</td><td>-</td><td>-</td><td>1480 B</td>
-</tr><tr><td>GetProductsValueTask</td><td>23.15 &mu;s</td><td>2.881 &mu;s</td><td>8.359 &mu;s</td><td>-</td><td>-</td><td>-</td><td>760 B</td>
+</thead><tbody><tr><td>GetProductsReferenceTask</td><td>18.47 &mu;s</td><td>1.922 &mu;s</td><td>5.544 &mu;s</td><td>1480 B</td>
+</tr><tr><td>GetProductsValueTask</td><td>23.15 &mu;s</td><td>2.881 &mu;s</td><td>8.359 &mu;s</td><td>760 B</td>
 </tr></tbody></table>
-</body>
-</html>
